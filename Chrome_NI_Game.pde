@@ -22,5 +22,11 @@ void draw() {
   ellipse (x, 175, 35, 35);
   
   //Create the appearence of moving by changing the x position
- x = x - 1;
+ x = x - 50;
+ 
+ //put the cactus back on the right edge after if leaves the left edge
+ if (x < -50)  {
+ x = 900; //Place off screen on right
+ }
+ 
 }
